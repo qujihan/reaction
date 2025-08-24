@@ -1,0 +1,6 @@
+find_package(GTest REQUIRED)
+enable_testing()
+file(GLOB TEST_SRC ${CMAKE_CURRENT_SOURCE_DIR}/*.cc)
+add_executable(testsuite ${TEST_SRC})
+target_link_libraries(testsuite PRIVATE gtest::gtest ${PROJECT_NAME})
+target_include_directories(testsuite PRIVATE ${GTest_INCLUDE_DIR})
