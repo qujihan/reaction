@@ -1,3 +1,3 @@
 # Reaction
 
-一个响应式框架
+A lightweight, header-only, high-performance reactive programming framework for C++20.
